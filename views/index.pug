@@ -1,0 +1,8 @@
+html
+  head
+    title= 'CTA Route 50 Tracker'
+    style
+      include ../public/style.css
+  body
+    for prediction in predictions
+      div #{prediction["stpnm"]} - #{prediction["rtdir"]} (Bus #{prediction["vid"]}) in #{prediction["prdctdn"]} minutes
